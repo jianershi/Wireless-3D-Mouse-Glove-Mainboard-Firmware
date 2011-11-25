@@ -1,11 +1,16 @@
-/*------------------------------------------//
- File Name: Wireless2.4GHz.h
- Established: 2011/3/4
- Written by Gong Zhangxiaowen(Andygongyb)
- E-Mail: andygongyb@gmail.com
- distributed under GPL
- Modified by Jianer Shi 11/19/2011
- //------------------------------------------*/
+/*-------------------------------------------------------------------------------
+ *  NRF24L01P Driver partially used open source project Funnyrobot by Andy Gong
+ *  Established: 2011/3/4
+ *  Written by Gong Zhangxiaowen(Andygongyb)
+ *  E-Mail: andygongyb@gmail.com
+ *  distributed under GPL
+ *  Modified by (Paul) Jianer Shi 11/19/2011
+ *  Optimized and cleaned up (Paul) Jianer Shi 11/25/2011
+ *  The Driver is heavily modified by (Paul) Jianer Shi. This intialization code will
+ *  only disable global interrupt without (re-)enable it. Driver needs interrupt to run.
+ *  So the programmer needs to (re-)enable global interrupt after intialization
+ --------------------------------------------------------------------------------*/
+
 
 #ifndef NRF24L01P_H_
 #define NRF24L01P_H_

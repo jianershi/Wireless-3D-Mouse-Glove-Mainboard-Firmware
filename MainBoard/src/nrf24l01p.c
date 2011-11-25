@@ -108,9 +108,6 @@ void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty)
 
 	  /* register PB0 handler on level 1 */
 	  INTC_register_interrupt(&Wireless_SPI_INT_handler, AVR32_SPI_IRQ, AVR32_INTC_INT0);
-
-	  /* Enable all interrupts */
-	  Enable_global_interrupt();
 }
 
 uint8_t WriteReg(uint8_t ucAddr, uint8_t ucData) {
@@ -221,14 +218,13 @@ void SPI_PutChar(uint8_t data)
 
 void SPI_PutChar2(uint8_t data, uint8_t string)
 {
-	uint8_t tmpStatus;
 	volatile unsigned char tmpHEAD;
 
 	tmpHEAD=(SPI_TxHead+1) & (SPI_TX_BUFFER_SIZE-1); //buffer about to full, refuse to write
 	while (tmpHEAD==SPI_TxTail) ; //wait for freespace
 	if (!string)
 		{
-			Disable_global_interrupt();
+			//Disable_global_interrupt();
 			AVR32_SPI.IDR.tdre=1;
 		}
 
@@ -239,21 +235,21 @@ void SPI_PutChar2(uint8_t data, uint8_t string)
 	if (!string)
 		{
 			AVR32_SPI.IER.tdre=1;
-			Enable_global_interrupt();
+			//Enable_global_interrupt();
 		}
 
 }
 
 void SPI_Puts(const char *s )
 {
-	Disable_global_interrupt();
+	//Disable_global_interrupt();
 	AVR32_SPI.IDR.tdre=1;
     while (*s!='\0')
     {
     	SPI_PutChar2(*s++, 1);
     }
     AVR32_SPI.IER.tdre=1;
-	Enable_global_interrupt();
+	//Enable_global_interrupt();
 
 
 }/* uart_puts */

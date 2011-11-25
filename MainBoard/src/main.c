@@ -13,10 +13,6 @@
 
 int main(void)
 {
-	uint8_t i;
-	uint8_t temp;
-	uint32_t temp32;
-	//const char st[]="01234567890123456789012345678901abcd\r\n";
 
 	static const gpio_map_t NRF24L01P_SPI_GPIO_MAP =
 	  {
@@ -64,7 +60,7 @@ int main(void)
 
 	  Disable_global_interrupt();
 	  INTC_init_interrupts();
-	  Enable_global_interrupt();
+
 
 
 	  // Assign I/Os to SPI
@@ -85,52 +81,15 @@ int main(void)
 	  // Enable SPI
 	  spi_enable(&AVR32_SPI);
 
-
-
-
-
-
-
-
-//	  dip204_example_configure_push_buttons_IT();
-//
-//	  // configure local joystick
-//	  dip204_example_configure_joystick_IT();
-
 	  // initialize delay driver
 	  delay_init( FOSC0);
 
-	  // initialize NRF24L01P
-	  //dip204_init(backlight_PWM, TRUE);
-
-	  // reset marker
-	  //current_char = 0x10;
-
-	  // Display default message.
-//	  dip204_set_cursor_position(8,1);
-//	  dip204_write_string("ATMEL");
-//	  dip204_set_cursor_position(7,2);
-//	  dip204_write_string("EVK1100");
-//	  dip204_set_cursor_position(6,3);
-//	  dip204_write_string("AVR32 UC3");
-//	  dip204_set_cursor_position(3,4);
-//	  dip204_write_string("AT32UC3A Series");
-//	  dip204_hide_cursor();
-
 	  //Initializing NRF24L01P
 	  NRF24L01P_Init(NRF24L01P_mProperty);
-//
-//	  SPI_PutChar('h');
-//	  	SPI_PutChar('e');
-//	  	SPI_PutChar('l');
-//	  	SPI_PutChar('l');
-//	  	SPI_PutChar('o');
-//	  	SPI_PutChar('1');
-//	  	SPI_PutChar('2');
-//	  	SPI_PutChar('3');
-//	  	SPI_PutChar('4');
-//	  	SPI_PutChar('5');
-//	  	SPI_PutChar('6');
+
+	  //Enable global interrupt
+	  Enable_global_interrupt();
+
 
 while(1)
 {
