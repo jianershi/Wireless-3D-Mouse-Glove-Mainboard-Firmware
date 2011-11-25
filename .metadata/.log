@@ -80,3 +80,11 @@ java.lang.NullPointerException
 !ENTRY com.atmel.avr32.target 4 -1 2011-11-25 14:02:31.851
 !MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
 
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-25 15:48:35.488
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-25 15:48:46.719
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+

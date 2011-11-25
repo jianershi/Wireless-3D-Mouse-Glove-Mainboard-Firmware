@@ -1,10 +1,3 @@
-/*
- * nrf24l01p.h
- *
- *  Created on: Nov 21, 2011
- *      Author: Paul Shi
- */
-
 /*------------------------------------------//
  File Name: Wireless2.4GHz.h
  Established: 2011/3/4
@@ -30,10 +23,7 @@
 #define SPI_TX_BUFFER_SIZE 128//256
 #endif
 
-
-
 #include <stdlib.h>
-//#include <inttypes.h>
 #include <stdint.h>
 
 
@@ -142,124 +132,28 @@ void SPI_PutChar(uint8_t data);
 void SPI_PutChar2(uint8_t data, uint8_t string);
 void SPI_Puts(const char *s );
 
-
 void CEDown(void);
 void CEUp(void);
 void Start_SS(void);
 void Stop_SS(void);
-
 
 __attribute__((__interrupt__))
 void Wireless_SPI_INT_handler(void);
 
 void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty);
 
-//uint8_t *m_pucBuff;
-//uint8_t m_ucLen;
-//uint8_t m_ucPipeID;
-//Flag *m_peIfDone;
-
 uint8_t CMD_2(uint8_t ucCMD, uint8_t *pucSend, uint8_t ucLen,
 		uint8_t *pucReceive);
 
 uint8_t CMD(uint8_t ucCMD);
 
+void SetProperty(NRF24L01P_Property_t *psProperty);
 
-//CChildData(uint8_t *pucBuff, uint8_t ucLen, Flag *peIfDone,
-//		uint8_t ucPipeID) {
-//	m_pucBuff = pucBuff;
-//	m_ucLen = ucLen;
-//	m_ucPipeID = ucPipeID;
-//	m_peIfDone = peIfDone;
-//	if (m_peIfDone)
-//		*m_peIfDone = Pending;
-//}
+uint8_t ReadReg(uint8_t ucAddr, uint8_t *pucData);
 
-
-//	static volatile uint8_t *m_pucPORTCE;
-//	static uint8_t m_ucPinCE;
-//	static CWireless *m_pInstance; //only one instance allowed to run
-//	static Property m_sProperty;
-//	static CChildData *m_pTxQueueHead;
-//	static CChildData *m_pTxQueueTail;
-//	static CChildData *m_pRxQueueHead;
-//	static CChildData *m_pRxQueueTail;
-//	static volatile uint8_t m_ucFailureCount;
-//	static volatile uint8_t m_ucTxQueueLength;
-//	static volatile uint8_t m_ucRxQueueLength;
-
-
-//	static CWireless *GetInstance(void) {
-//		if (!m_pInstance) {
-//			m_pInstance = new CWireless();
-//		}
-//		return m_pInstance;
-//	}
-
-	//void ChangePins(IOSet *psCSN, IOSet *psCE);
-	void SetProperty(NRF24L01P_Property_t *psProperty);
-//	void GetProperty(Property *psProperty) {
-//		memcpy((void*) psProperty, (const void*) &m_sProperty, sizeof(Property));
-//	}
-
-//	virtual void PushString(const char *pcStr);
-//
-//	virtual void PushHex(uint8_t *pucData, uint8_t ucLen) {
-//		AddToQueue(pucData, ucLen);
-//	}
-//
-//	uint16_t AddToQueue(uint8_t *pucBuff, uint8_t ucLen,
-//			Flag *peIfDone = NULL);
-//	uint8_t GetFromQueue(uint8_t *&pucBuff);
-//
-
-	uint8_t ReadReg(uint8_t ucAddr, uint8_t *pucData);
-//	uint8_t ReadReg(uint8_t ucAddr, uint8_t *pucBuff, uint8_t ucLen) {
-//		for (uint8_t i = 0; i < ucLen; i++)
-//			*(pucBuff + i) = NOP; // set the data in the buffer to NOP to prevent malfunction
-//		return CMD(R_REGISTER | (REGISTER_MASK & ucAddr), pucBuff, ucLen,
-//				pucBuff);
-//	}
-	uint8_t WriteReg(uint8_t ucAddr, uint8_t ucData);
-	uint8_t WriteReg_2(uint8_t ucAddr, uint8_t *pucBuff, uint8_t ucLen);
-	void ChangeAddr(uint8_t *pucAddr);
-
-
-//	uint8_t FlushRxQueue(void);
-//
-//	uint8_t GetFailureCount(void) {
-//		return m_ucFailureCount;
-//	}
-//
-//	uint8_t ResetFailureCount(void) {
-//		uint8_t ucTmp = m_ucFailureCount;
-//		m_ucFailureCount = 0;
-//		return ucTmp;
-//	}
-//
-//	uint8_t GetTxQueueLength(void) {
-//		return m_ucTxQueueLength;
-//	}
-//	uint8_t GetRxQueueLength(void) {
-//		return m_ucRxQueueLength;
-//	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+uint8_t WriteReg(uint8_t ucAddr, uint8_t ucData);
+uint8_t WriteReg_2(uint8_t ucAddr, uint8_t *pucBuff, uint8_t ucLen);
+void ChangeAddr(uint8_t *pucAddr);
 
 
 #endif /* NRF24L01P_H_ */
