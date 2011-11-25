@@ -1,0 +1,12 @@
+!SESSION 2011-11-25 08:01:17.354 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\Paul Shi\git_project\avr32.workspace
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-25 08:04:57.190
+!MESSAGE Indexed 'MainBoard3' (11 sources, 68 headers) in 5.30 sec: 9,315 declarations; 5,394 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-25 08:05:09.917
+!MESSAGE Indexed 'MainBoard' (0 sources, 21 headers) in 0.10 sec: 137 declarations; 299 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.23%)
