@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<target clocksource="1" binary="" binary-date="0" cpu="UC3B0256" comport="" daisybitsafter="0" daisyenabled="false" adapter="USB DFU" board="Unspecified" daisydevsbefore="0" daisydevsafter="0" id="2" default="true" connection-type="usb" name="AVR32 USB DFU" daisybitsbefore="0" serial="">
+	<description></description>
+</target>

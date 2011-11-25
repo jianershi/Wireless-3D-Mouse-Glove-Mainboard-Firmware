@@ -137,8 +137,8 @@ while(1)
 
 
 	//SPI_Puts("dddasdfasdfsadfsadf Hello!!! :D :D :D \n\r");
-	SPI_Puts("01234567890123456789012345678901abcd\r\n");
-	delay_ms(10);
+	SPI_Puts("01234567890123456789012345678901abcd \r\n");
+	delay_ms(3);
 	//SPI_Puts("helloworldhelloworldhelloworldhel");
 	//SPI_Puts("hello world! :D \r\n");
 	//delay_ms(5000);
