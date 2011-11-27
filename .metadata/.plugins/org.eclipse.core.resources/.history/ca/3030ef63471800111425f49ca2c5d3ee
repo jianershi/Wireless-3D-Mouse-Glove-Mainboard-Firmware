@@ -1,0 +1,41 @@
+/*
+ * algorithm.h
+ *
+ *  Created on: Nov 23, 2011
+ *      Author: Bobby
+ */
+
+#ifndef ALGORITHM_H_
+#define ALGORITHM_H_
+
+#include <math.h>
+
+typedef struct{
+	float q0,q1,q2,q3;
+}quat;
+/*
+typedef struct{
+	float J[6][4];
+}jacob;
+
+*/
+
+
+
+
+
+#define dt 0.02 //40ms
+
+
+
+void getangle(float* angle1,float* angle2,float* angle3,quat *q);
+void M_matrix(float** m,float a, float b, float c, float d);
+quat cross(quat* a,quat* b);
+quat GN(quat* q,float ax,float ay,float az,float mx,float my,float mz);
+void Jacobian(float** J, float a, float b, float c, float d, float Ax,float Ay,float Az,float Mx,float My,float Mz);
+
+
+
+
+
+#endif /* ALGORITHM_H_ */

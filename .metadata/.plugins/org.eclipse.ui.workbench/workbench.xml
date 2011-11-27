@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="25" version="2.0">
+<workbenchAdvisor/>
+<window height="772" maximized="true" width="1024" x="593" y="-15">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.atmel.avr32.core.ui.launchAVRStudio4" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.atmel.avr32.core.ui_win32.win32.x86.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="114" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1322229682676" focus="true" label="Workspace - AVR">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Paul Shi/git_project/avr32.workspace/MainBoard.Borui/src/main.c" title="main.c" tooltip="MainBoard.Borui/src/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MainBoard.Borui/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18203" selectionTopPixel="10115"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.h" partName="gpio.h" path="C:/Users/Paul Shi/git_project/avr32.workspace/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h" title="gpio.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="2503" selectionTopPixel="799"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.c" partName="gpio.c" title="gpio.c" tooltip="C:\Users\Paul Shi\Downloads\asf-standalone-archive-2.8.1.36\asf-2.8.1\avr32\drivers\gpio\gpio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/Paul%20Shi/Downloads/asf-standalone-archive-2.8.1.36/asf-2.8.1/avr32/drivers/gpio/gpio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="2902" selectionTopPixel="1241"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gpio_110.h" partName="gpio_110.h" title="gpio_110.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h" project="MainBoard.Borui"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="11327" selectionTopPixel="3179"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="twi_master_example.c" partName="twi_master_example.c" path="C:/Users/Paul Shi/git_project/avr32.workspace/test2/src/twi_master_example.c" title="twi_master_example.c" tooltip="test2/src/twi_master_example.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test2/src/twi_master_example.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7182" selectionTopPixel="2579"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="twi.c" partName="twi.c" path="C:/Users/Paul Shi/git_project/avr32.workspace/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c" title="twi.c" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="10751" selectionTopPixel="6664"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.atmel.avr32.views.TargetView" partName="AVR Targets">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.atmel.avr32.views.TargetView" activePerspective="com.atmel.avr32.AVR32Perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.atmel.avr.core.ui.AVRPerspective" id="com.atmel.avr32.AVR32Perspective" label="AVR"/>
+<alwaysOnActionSet id="com.atmel.avr32.actionSet"/>
+<alwaysOnActionSet id="com.atmel.avr32.target"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="com.atmel.avr32.views.TargetView"/>
+<show_view_action id="com.atmel.avr32.views.RegistersView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<new_wizard_action id="com.atmel.avr32.wizards.ProjectWizard.managed"/>
+<new_wizard_action id="com.atmel.avr32.wizards.ProjectWizard.managed.CPP"/>
+<new_wizard_action id="com.atmel.avr32.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="com.atmel.avr32.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="com.atmel.avr32.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="com.atmel.avr32.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="com.atmel.avr32.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="com.atmel.avr32.wizards.NewFusesFileWizard"/>
+<new_wizard_action id="com.atmel.avr32.sf.core.ui.wizards.ManagedCProjectWizard"/>
+<new_wizard_action id="com.atmel.avr32.sf.core.ui.wizards.newExampleWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="com.atmel.avr32.views.TargetView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@b16f5f" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.11845584" ratioLeft="224" ratioRight="1667" relationship="2" relative="topLeft"/>
+<info folder="true" part="right1" ratio="0.6465416" ratioLeft="1103" ratioRight="603" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.atmel.avr32.views.RegistersView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="right2" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="right1">
+<folder activePageID="com.atmel.avr32.views.TargetView" appearance="2" expanded="2">
+<page content="com.atmel.avr32.views.TargetView" label="AVR Targets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.7392704" ratioLeft="689" ratioRight="243" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MainBoard.Borui/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test2/src/twi_master_example.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h"/>
+</editors>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8954" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="8720" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="8595" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="twi_master_example.c" index="1">
+<position info="not_deleted" x="7182" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6163" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="7855" y="15"/>
+</item>
+<item historyLabel="twi_master_example.c" index="1">
+<position info="not_deleted" x="7182" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="7855" y="15"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="8443" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="11544" y="4"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6163" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14317" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="514" y="4"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5346" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14337" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5375" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5375" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14422" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1096" y="15"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14463" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1369" y="11"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14418" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5369" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14339" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position info="not_deleted" x="3345" y="4"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14339" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="14420" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15930" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="12683" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position info="not_deleted" x="3260" y="4"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="12127" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15930" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="12760" y="27"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15541" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position info="not_deleted" x="3423" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15541" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="12750" y="0"/>
+</item>
+<item historyLabel="twi.h" index="3">
+<position info="not_deleted" x="3417" y="11"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="12750" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15541" y="0"/>
+</item>
+<item historyLabel="twi_master_example.c" index="1">
+<position info="not_deleted" x="7182" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="15667" y="0"/>
+</item>
+<item historyLabel="twi.c" index="2">
+<position info="not_deleted" x="13309" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="18203" y="0"/>
+</item>
+<item active="true" historyLabel="twi.c" index="2">
+<position info="not_deleted" x="10751" y="15"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h">
+<persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi_211.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\twi_211.h">
+<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\twi_211.h" project="MainBoard.Borui"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi.c" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c">
+<persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="compiler.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/UTILS/compiler.h">
+<persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/UTILS/compiler.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi_master_example.c" tooltip="test2/src/twi_master_example.c">
+<persistable path="/test2/src/twi_master_example.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio_110.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h">
+<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h" project="MainBoard.Borui"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uc3b0256.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\uc3b0256.h">
+<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\uc3b0256.h" project="MainBoard.Borui"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.c" tooltip="C:\Users\Paul Shi\Downloads\asf-standalone-archive-2.8.1.36\asf-2.8.1\avr32\drivers\gpio\gpio.c">
+<persistable uri="file:/C:/Users/Paul%20Shi/Downloads/asf-standalone-archive-2.8.1.36/asf-2.8.1/avr32/drivers/gpio/gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h">
+<persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\math.h">
+<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\math.h" project="MainBoard.Borui"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="algorithm.h" tooltip="MainBoard.Borui/src/algorithm.h">
+<persistable path="/MainBoard.Borui/src/algorithm.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="algorithm.c" tooltip="MainBoard.Borui/src/algorithm.c">
+<persistable path="/MainBoard.Borui/src/algorithm.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="MainBoard.Borui/src/main.c">
+<persistable path="/MainBoard.Borui/src/main.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tc_222.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\tc_222.h">
+<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\tc_222.h" project="MainBoard"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tc.c" tooltip="C:\Users\Paul Shi\Downloads\asf-standalone-archive-2.8.1.36\asf-2.8.1\avr32\drivers\tc\tc.c">
+<persistable uri="file:/C:/Users/Paul%20Shi/Downloads/asf-standalone-archive-2.8.1.36/asf-2.8.1/avr32/drivers/tc/tc.c"/>
+</file>
+</mruList>
+</workbench>

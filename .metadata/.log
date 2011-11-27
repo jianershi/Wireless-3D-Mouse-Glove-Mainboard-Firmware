@@ -88,3 +88,435 @@ java.lang.NullPointerException
 !ENTRY com.atmel.avr32.target 4 -1 2011-11-25 15:48:46.719
 !MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.520
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.527
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.535
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.543
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.551
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-25 21:31:31.559
+!MESSAGE 
+!SESSION 2011-11-26 09:39:44.972 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 09:52:38.693
+!MESSAGE Indexed 'MainBoard.Tranceiver.Test' (11 sources, 68 headers) in 3.99 sec: 9,311 declarations; 5,411 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 09:53:14.618
+!MESSAGE Indexed 'MainBoard' (11 sources, 68 headers) in 3.95 sec: 9,311 declarations; 5,411 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 09:53:33.227
+!MESSAGE Indexed 'MainBoard.Borui' (0 sources, 21 headers) in 0.15 sec: 137 declarations; 299 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.23%)
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.111
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.118
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.126
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.134
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.142
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.150
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.158
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.166
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.175
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.182
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.191
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.198
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.206
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.214
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 09:57:02.222
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.151
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.158
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.166
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.174
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.182
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:22:08.190
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.376
+!MESSAGE No Condition--> Process 1 (org.eclipse.cdt.managedbuilder.core.NewManagedProject)-->Success: Executed successfully with args: [name:test2, location:null, artifactExtension:elf, isCProject:true]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.377
+!MESSAGE No Condition--> Process 2 (com.atmel.avr32.sf.core.setDevice)-->Success: Executed successfully with args: [projectName:test2, device:UC3B0256, secured:false, ram:0, flash:0]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.377
+!MESSAGE No Condition--> Process 3 (org.eclipse.cdt.core.CreateSourceFolder)-->Success: Executed successfully with args: [projectName:test2, path:src]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.377
+!MESSAGE No Condition--> Process 4 (org.eclipse.cdt.core.AddFiles)-->Success: Executed successfully with args: [projectName:test2, files:{{source:src/main_evk1101.c, target:src/main.c, replaceable:true}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.378
+!MESSAGE No Condition--> Process 5 (com.atmel.avr32.sf.core.importFiles)-->Success: Executed successfully with args: [projectName:test2, frameworkId:com.atmel.avr32.sf.uc3, files:{{source:UTILS/STARTUP_FILES/GCC/trampoline.S, target:src/SOFTWARE_FRAMEWORK/ASM/trampoline.x}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.378
+!MESSAGE No Condition--> Process 6 (com.atmel.avr32.sf.core.importFiles)-->Success: Executed successfully with args: [projectName:test2, frameworkId:com.atmel.avr32.sf.uc3, files:{{source:BOARDS/board.h, target:src/SOFTWARE_FRAMEWORK/BOARDS/board.h}, {source:BOARDS/EVK1101/evk1101.h, target:src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/evk1101.h}, {source:BOARDS/EVK1101/led.c, target:src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/led.c}, {source:BOARDS/EVK1101/led.h, target:src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/led.h}, {source:SERVICES/USB/CLASS/DFU/EXAMPLES/ISP/CONF/conf_isp.h, target:src/SOFTWARE_FRAMEWORK/UTILS/conf_isp.h}, {source:UTILS/STARTUP_FILES/GCC/crt0.S, target:src/SOFTWARE_FRAMEWORK/UTILS/STARTUP_FILES/GCC/crt0.x}, {source:UTILS/LINKER_SCRIPTS/AT32UC3B/0256/GCC/link_uc3b0256.lds, target:src/SOFTWARE_FRAMEWORK/UTILS/LINKER_SCRIPTS/AT32UC3B/0256/GCC/link_uc3b0256.lds}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.379
+!MESSAGE No Condition--> Process 7 (org.eclipse.cdt.managedbuilder.core.SetMBSBooleanOptionValue)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.link.option.nostart.*, value:true, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.379
+!MESSAGE No Condition--> Process 8 (org.eclipse.cdt.managedbuilder.core.SetMBSStringOptionValue)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:avr32.both.preprocessor.option.flags.*, value:-Wa,-g, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.380
+!MESSAGE No Condition--> Process 9 (org.eclipse.cdt.managedbuilder.core.SetMBSStringOptionValue)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.compiler.option.optimization.flags.*, value:-fdata-sections, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.380
+!MESSAGE No Condition--> Process 10 (org.eclipse.cdt.managedbuilder.core.SetMBSStringOptionValue)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.compiler.option.misc.other.*, value:-c -fmessage-length=0, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.381
+!MESSAGE No Condition--> Process 11 (org.eclipse.cdt.managedbuilder.core.SetMBSStringOptionValue)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.link.option.ldflags.*, value:-Wl,--gc-sections -Wl,-e,_trampoline -T../src/SOFTWARE_FRAMEWORK/UTILS/LINKER_SCRIPTS/AT32UC3B/0256/GCC/link_uc3b0256.lds, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.381
+!MESSAGE No Condition--> Process 12 (org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.compiler.option.preprocessor.def.symbols.*, values:{BOARD=EVK1101}, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.382
+!MESSAGE No Condition--> Process 13 (org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.both.asm.option.include.paths.*, values:{../src/SOFTWARE_FRAMEWORK/BOARDS}, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.382
+!MESSAGE No Condition--> Process 14 (org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.compiler.option.include.paths.*, values:{../src/SOFTWARE_FRAMEWORK/BOARDS}, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.383
+!MESSAGE No Condition--> Process 15 (org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:avr32.both.preprocessor.option.paths.*, values:{../src/SOFTWARE_FRAMEWORK/BOARDS}, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.383
+!MESSAGE No Condition--> Process 16 (org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues)-->Success: Executed successfully with args: [projectName:test2, resourcePaths:{{id:gnu.c.link.option.paths.*, values:{../src/SOFTWARE_FRAMEWORK/BOARDS}, path:}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.384
+!MESSAGE No Condition--> Process 17 (com.atmel.avr32.sf.core.frameworkWizard)-->Success: Executed successfully with args: [projectName:test2, wizardId:com.atmel.avr32.sf.uc3b.driverWizard, options:{{id:com.atmel.avr32.sf.uc3b.driver.option.intc, value:true}, {id:com.atmel.avr32.sf.uc3b.service.option.newlibaddon, value:speed}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.799
+!MESSAGE No Condition--> Process 1 (com.atmel.avr32.sf.core.deleteFiles)-->Success: Executed successfully with args: [projectName:test2, files:{{file:src/main.c}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.800
+!MESSAGE No Condition--> Process 2 (com.atmel.avr32.sf.core.importFiles)-->Success: Executed successfully with args: [projectName:test2, frameworkId:com.atmel.avr32.sf.uc3, files:{{source:DRIVERS/TWI/MASTER_EXAMPLE/twi_master_example.c, target:src/twi_master_example.c}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:38:58.800
+!MESSAGE No Condition--> Process 3 (com.atmel.avr32.sf.core.frameworkWizard)-->Success: Executed successfully with args: [projectName:test2, wizardId:com.atmel.avr32.sf.uc3b.driverWizard, options:{{id:com.atmel.avr32.sf.uc3b.driver.option.twi, value:true}, {id:com.atmel.avr32.sf.uc3b.service.option.debug, value:true}, {id:com.atmel.avr32.sf.uc3b.driver.option.intc, value:true}, {id:com.atmel.avr32.sf.uc3b.driver.option.gpio, value:true}, {id:com.atmel.avr32.sf.uc3b.service.option.newlibaddon, value:speed}, {id:com.atmel.avr32.sf.uc3b.driver.option.pm, value:true}, {id:com.atmel.avr32.sf.uc3b.driver.option.usart, value:true}}]
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-11-26 15:39:01.953
+!MESSAGE Indexed 'test2' (11 sources, 69 headers) in 2.94 sec: 9,124 declarations; 5,047 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.294
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.306
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.317
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.331
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.342
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.355
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.367
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.380
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:13.391
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:29.686
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:29.698
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:29.710
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:29.723
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:45:29.747
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.645
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.660
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.674
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.690
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.770
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.778
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.786
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.810
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.858
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.866
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.874
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.882
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.890
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.962
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:46:33.970
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:48:55.756
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:48:55.763
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:48:55.771
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 15:48:55.779
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:02.919
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:02.967
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:03.087
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:03.239
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:03.255
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:03.263
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 16:12:03.271
+!MESSAGE 
+!SESSION 2011-11-26 17:06:11.303 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:21:40.180
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:21:40.200
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:21:40.203
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:21:40.211
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.051
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.058
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.066
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.074
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.082
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.090
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.099
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.106
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.114
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.122
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.130
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.138
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.147
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.155
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.163
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.170
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.178
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.187
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.194
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.202
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.211
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.218
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.226
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.235
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.242
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.251
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.258
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-26 17:22:02.274
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-26 17:47:59.855
+!MESSAGE NLS missing message: ProgramDialogComposite_EraseUnrelated in: com.atmel.avr32.target.ui.composites.messages
+!SESSION 2011-11-27 01:31:17.156 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-11-27 01:31:19.588
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-27 01:35:14.171
+!MESSAGE NLS missing message: ProgramDialogComposite_EraseUnrelated in: com.atmel.avr32.target.ui.composites.messages
+!SESSION 2011-11-27 11:53:43.236 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-27 12:05:20.325
+!MESSAGE NLS missing message: ProgramDialogComposite_EraseUnrelated in: com.atmel.avr32.target.ui.composites.messages
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 13:20:23.209
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 13:20:23.218
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 13:20:23.243
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 13:20:23.256
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 13:20:23.269
+!MESSAGE 
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 13:36:48.060
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 13:58:58.770
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 13:59:15.123
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+

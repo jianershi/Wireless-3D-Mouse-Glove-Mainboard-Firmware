@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.atmel.avr32.tool.batchisp.ProgramDialogComposite.2">
+		<item value="C:\Users\Paul Shi\git_project\avr32.workspace\MainBoard.Tranceiver.Test\Debug\MainBoard3.elf" key="filepath"/>
+		<item value="true" key="unlock"/>
+		<item value="true" key="erase"/>
+		<item value="true" key="start"/>
+		<item value="true" key="verify"/>
+		<item value="" key="length"/>
+		<item value="true" key="fullLength"/>
+		<item value="true" key="reset"/>
+		<item value="0x0" key="offset"/>
+	</section>
+	<section name="SelectedDevices">
+		<list key="LastUsed">
+			<item value="UC3B0256"/>
+		</list>
+	</section>
+	<section name="com.atmel.avr32.tool.batchisp.ReadDialogComposite.2">
+		<item value="" key="filepath"/>
+		<item value="" key="length"/>
+		<item value="0" key="format"/>
+		<item value="0x0" key="offset"/>
+	</section>
+</section>

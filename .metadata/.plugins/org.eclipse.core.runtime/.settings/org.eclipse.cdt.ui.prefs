@@ -1,5 +1,6 @@
-#Fri Nov 25 08:05:23 CST 2011
+#Sat Nov 26 00:11:47 CST 2011
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
+content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
 eclipse.preferences.version=1
 useQuickDiffPrefPage=true
