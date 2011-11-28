@@ -1,0 +1,11 @@
+/*
+ * delay_us.c
+ *
+ *  Created on: Nov 27, 2011
+ *      Author: Paul Shi
+ */
+
+void delay_us(unsigned long delay)
+{
+  cpu_delay_us(delay, FPLL);
+}

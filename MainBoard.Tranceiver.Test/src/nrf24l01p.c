@@ -1,10 +1,12 @@
 #include "nrf24l01p.h"
-
+#include "delay_us.h"
 
 static volatile uint8_t SPI_TxBuf[SPI_TX_BUFFER_SIZE];
 static volatile uint8_t SPI_TxHead; //writing --last location written
 static volatile uint8_t SPI_TxTail; //read    --last location read   8 bit can represent maximu 256 byte
 static volatile uint16_t SPI_Length;
+
+unsigned long cpu_freq;
 
 
 //Sending Interrupt
@@ -52,15 +54,16 @@ void Wireless_SPI_INT_handler(void)
 	}
 
 	WriteReg(STATUS, 0x7E);
-
-
 	CEUp(); //transmit
 
 }
 
 
-void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty)
+void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty, unsigned long fcpu_hz)
 {
+
+	cpu_freq= fcpu_hz;
+
 	SPI_TxHead=0;
 	SPI_TxTail=0;
 	SPI_Length=0;
@@ -177,6 +180,7 @@ void Start_SS(void)
 {
 	spi_selectChip(&AVR32_SPI,0);
 	//delay_ms(1);
+	delay_us(150, cpu_freq);
 }
 
 void Stop_SS(void)
@@ -261,6 +265,7 @@ void SPI_Puts(const char *s )
     }
     AVR32_SPI.IER.tdre=1;
 	//Enable_global_interrupt();
+
 
 
 }/* uart_puts */

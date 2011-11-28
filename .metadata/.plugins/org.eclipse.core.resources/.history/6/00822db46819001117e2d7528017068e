@@ -1,0 +1,13 @@
+/*
+ * delay_us.c
+ *
+ *  Created on: Nov 27, 2011
+ *      Author: Paul Shi
+ */
+#include "delay_us.h"
+extern define FPLL
+
+void delay_us(unsigned long delay)
+{
+  cpu_delay_us(delay, FPLL);
+}

@@ -8,13 +8,13 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.atmel.avr32.core.ui.launchAVRStudio4" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.atmel.avr32.core.ui_win32.win32.x86.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="114" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -41,6 +41,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -177,6 +180,27 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_us.c" tooltip="MainBoard.Tranceiver.Test/src/delay_us.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/delay_us.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_ms.c" tooltip="MainBoard.Tranceiver.Test/src/delay_ms.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/delay_ms.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="MainBoard.Tranceiver.Test/src/delay.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/delay.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_us.h" tooltip="MainBoard.Tranceiver.Test/src/delay_us.h">
+<persistable path="/MainBoard.Tranceiver.Test/src/delay_us.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.h" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.h">
+<persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cycle_counter.h" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/DRIVERS/CPU/CYCLE_COUNTER/cycle_counter.h">
+<persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/DRIVERS/CPU/CYCLE_COUNTER/cycle_counter.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.h" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.h">
 <persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.h"/>
 </file>
@@ -185,9 +209,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.c" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.c">
 <persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c">
-<persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h">
 <persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h"/>
@@ -203,24 +224,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi_master_example.c" tooltip="test2/src/twi_master_example.c">
 <persistable path="/test2/src/twi_master_example.c"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio_110.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h">
-<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\gpio_110.h" project="MainBoard.Borui"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uc3b0256.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\uc3b0256.h">
-<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\avr32\uc3b0256.h" project="MainBoard.Borui"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.c" tooltip="C:\Users\Paul Shi\Downloads\asf-standalone-archive-2.8.1.36\asf-2.8.1\avr32\drivers\gpio\gpio.c">
-<persistable uri="file:/C:/Users/Paul%20Shi/Downloads/asf-standalone-archive-2.8.1.36/asf-2.8.1/avr32/drivers/gpio/gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpio.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h">
-<persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\math.h">
-<persistable path="C:\as4e-ide\plugins\com.atmel.avr.toolchains.win32.x86_3.0.0.201009140852\os\win32\x86\avr32\include\math.h" project="MainBoard.Borui"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="algorithm.h" tooltip="MainBoard.Borui/src/algorithm.h">
-<persistable path="/MainBoard.Borui/src/algorithm.h"/>
 </file>
 </mruList>
 </workbench>

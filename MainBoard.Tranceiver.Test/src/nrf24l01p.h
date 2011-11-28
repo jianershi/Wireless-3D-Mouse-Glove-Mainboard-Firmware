@@ -145,7 +145,7 @@ void Stop_SS(void);
 __attribute__((__interrupt__))
 void Wireless_SPI_INT_handler(void);
 
-void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty);
+void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty, unsigned long fcpu_hz); //fcpu_hz for delaying purpose
 
 uint8_t CMD_2(uint8_t ucCMD, uint8_t *pucSend, uint8_t ucLen,
 		uint8_t *pucReceive);

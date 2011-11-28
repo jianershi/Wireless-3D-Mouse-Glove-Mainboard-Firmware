@@ -533,3 +533,211 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 !ENTRY com.atmel.avr32.target 4 -1 2011-11-27 14:23:32.507
 !MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
 
+!SESSION 2011-11-27 19:39:19.134 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-27 19:48:03.601
+!MESSAGE NLS missing message: ProgramDialogComposite_EraseUnrelated in: com.atmel.avr32.target.ui.composites.messages
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.133
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.140
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.149
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.156
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.165
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.188
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.197
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.204
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:56:39.212
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.299
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.301
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.341
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.348
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.357
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.364
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.404
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.412
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:06.428
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:27.836
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:27.844
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:27.869
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:27.876
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:27.884
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.012
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.020
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.028
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.080
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.084
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.092
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 19:57:28.100
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.364
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.372
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.380
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.404
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.412
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.420
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.428
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.436
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.444
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.452
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.460
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.488
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.489
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.490
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.492
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.513
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.514
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.524
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.540
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.548
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.556
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.564
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:01:32.572
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:02:34.132
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:02:34.140
+!MESSAGE 
+
+!ENTRY org.eclipse.core.runtime 8 1 2011-11-27 20:02:34.156
+!MESSAGE 
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:14:24.503
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:16:04.451
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:18:03.096
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:19:01.055
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:38:32.221
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:38:43.299
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 20:52:56.590
+!MESSAGE 
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 21:07:36.560
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+
