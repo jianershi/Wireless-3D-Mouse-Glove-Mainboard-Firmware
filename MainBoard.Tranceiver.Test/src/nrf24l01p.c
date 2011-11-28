@@ -269,3 +269,17 @@ void SPI_Puts(const char *s )
 
 
 }/* uart_puts */
+
+/*This Function can output upto 256 Byte */
+void SPI_Put_Data (const char *s, unsigned char length)
+{
+	uint8_t i;
+	//Disable_global_interrupt();
+	AVR32_SPI.IDR.tdre=1;
+    for (i=0;i<length;i++)
+    {
+    	SPI_PutChar2(*s++, 1);
+    }
+    AVR32_SPI.IER.tdre=1;
+	//Enable_global_interrupt();
+}

@@ -136,6 +136,7 @@ void TransBlock(uint8_t *pucSend, uint8_t ucLen, uint8_t *pucReceive);
 void SPI_PutChar(uint8_t data);
 void SPI_PutChar2(uint8_t data, uint8_t string);
 void SPI_Puts(const char *s );
+void SPI_Put_Data (const char *s, unsigned char length);
 
 void CEDown(void);
 void CEUp(void);

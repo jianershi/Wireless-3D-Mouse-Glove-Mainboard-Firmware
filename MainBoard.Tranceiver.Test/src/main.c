@@ -27,6 +27,8 @@ int main(void)
 	    {AVR32_PIN_PA16, AVR32_SPI_NPCS_0_0_FUNCTION}
 	  };
 
+	const char testdata[3] = {0x01, 0x00,0x02};
+
 
 	 // Switch the CPU main clock to PLL0
 
@@ -100,7 +102,9 @@ while(1)
 
 
 	//SPI_Puts("dddasdfasdfsadfsadf Hello!!! :D :D :D \n\r");
-	SPI_Puts("01234567890123456789012345678901abcd \r\n");
+	//SPI_Puts("01234567890123456789012345678901abcd \r\n");
+	SPI_Put_Data(testdata, 3);
+	//SPI_PutChar(0);
 //	delay_us(800);
 	//SPI_Puts("helloworldhelloworldhelloworldhel");
 	//SPI_Puts("hello world! :D \r\n");

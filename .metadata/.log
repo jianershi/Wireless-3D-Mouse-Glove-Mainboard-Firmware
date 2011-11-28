@@ -741,3 +741,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 !ENTRY com.atmel.avr32.target 4 -1 2011-11-27 21:07:36.560
 !MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
 
+!SESSION 2011-11-27 21:38:54.439 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-27 22:07:40.028
+!MESSAGE NLS missing message: ProgramDialogComposite_EraseUnrelated in: com.atmel.avr32.target.ui.composites.messages
+
+!ENTRY com.atmel.avr32.target 4 -1 2011-11-27 22:25:16.021
+!MESSAGE AtLibUsbDfu: 3EB 2FF6 no device present.
+

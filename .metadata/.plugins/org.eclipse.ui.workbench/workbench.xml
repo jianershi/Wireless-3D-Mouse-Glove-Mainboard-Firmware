@@ -43,8 +43,9 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="329"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -180,17 +181,26 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.h" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.h">
+<persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.c" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="MainBoard.Tranceiver.Test/src/main.c">
+<persistable path="/MainBoard.Tranceiver.Test/src/main.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_us.c" tooltip="MainBoard.Tranceiver.Test/src/delay_us.c">
 <persistable path="/MainBoard.Tranceiver.Test/src/delay_us.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_us.h" tooltip="MainBoard.Tranceiver.Test/src/delay_us.h">
+<persistable path="/MainBoard.Tranceiver.Test/src/delay_us.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_ms.c" tooltip="MainBoard.Tranceiver.Test/src/delay_ms.c">
 <persistable path="/MainBoard.Tranceiver.Test/src/delay_ms.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="MainBoard.Tranceiver.Test/src/delay.c">
 <persistable path="/MainBoard.Tranceiver.Test/src/delay.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay_us.h" tooltip="MainBoard.Tranceiver.Test/src/delay_us.h">
-<persistable path="/MainBoard.Tranceiver.Test/src/delay_us.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.h" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.h">
 <persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.h"/>
@@ -200,15 +210,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c">
 <persistable path="/MainBoard.Tranceiver.Test/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.h" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.h">
-<persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="MainBoard.Tranceiver.Test/src/main.c">
-<persistable path="/MainBoard.Tranceiver.Test/src/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf24l01p.c" tooltip="MainBoard.Tranceiver.Test/src/nrf24l01p.c">
-<persistable path="/MainBoard.Tranceiver.Test/src/nrf24l01p.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="twi.h" tooltip="MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h">
 <persistable path="/MainBoard.Borui/src/SOFTWARE_FRAMEWORK/DRIVERS/TWI/twi.h"/>
