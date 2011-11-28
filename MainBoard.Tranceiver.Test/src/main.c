@@ -32,7 +32,7 @@ int main(void)
 	 pm_enable_osc0_crystal(&AVR32_PM, FOSC0); //start OSC0
 	 pm_enable_clk0(&AVR32_PM, 3); //Enable CLK0
 	 pm_pll_setup(&AVR32_PM, 0, 6, 1, 0, 16); // Set PPL0, Let Fvco be 7/1*Fosc= 7*12Mhz=84Mhz
-	 pm_pll_set_option(&AVR32_PM, 0, 1, 1, 0); // set PPL Option, Let FPLL=Fvco=84Mhz
+	 pm_pll_set_option(&AVR32_PM, 0, 1, 0, 0); // set PPL Option, Let FPLL=Fvco=84Mhz
 	 pm_pll_enable(&AVR32_PM, 0);
 	 pm_wait_for_pll0_locked(&AVR32_PM);
 	 flashc_set_wait_state(1);
@@ -100,7 +100,7 @@ while(1)
 
 	//SPI_Puts("dddasdfasdfsadfsadf Hello!!! :D :D :D \n\r");
 	SPI_Puts("01234567890123456789012345678901abcd \r\n");
-	delay_ms(3);
+	delay_ms(1);
 	//SPI_Puts("helloworldhelloworldhelloworldhel");
 	//SPI_Puts("hello world! :D \r\n");
 	//delay_ms(5000);

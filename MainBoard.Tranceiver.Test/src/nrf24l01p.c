@@ -65,12 +65,22 @@ void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty)
 	SPI_TxTail=0;
 	SPI_Length=0;
 
-	NRF24L01P_mProperty.ucCH=50; // default channel
-	NRF24L01P_mProperty.pucAddr[0]=0xE7;
-	NRF24L01P_mProperty.pucAddr[1]=0xE7;
-	NRF24L01P_mProperty.pucAddr[2]=0xE7;
-	NRF24L01P_mProperty.pucAddr[3]=0xE7;
+//	NRF24L01P_mProperty.ucCH=50; // default channel
+//	NRF24L01P_mProperty.pucAddr[0]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[1]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[2]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[3]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[4]=0xC1;
+
+
+	NRF24L01P_mProperty.ucCH=30; // default channel
+	NRF24L01P_mProperty.pucAddr[0]=0xE6;
+	NRF24L01P_mProperty.pucAddr[1]=0xE6;
+	NRF24L01P_mProperty.pucAddr[2]=0xE6;
+	NRF24L01P_mProperty.pucAddr[3]=0xE6;
 	NRF24L01P_mProperty.pucAddr[4]=0xC1;
+
+
 
 	gpio_enable_gpio_pin(NRF24L01P_CE_PIN);
 

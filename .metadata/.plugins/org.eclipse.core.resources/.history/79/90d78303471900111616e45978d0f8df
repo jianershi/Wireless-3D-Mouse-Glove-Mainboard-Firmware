@@ -1,0 +1,260 @@
+#include "nrf24l01p.h"
+
+
+static volatile uint8_t SPI_TxBuf[SPI_TX_BUFFER_SIZE];
+static volatile uint8_t SPI_TxHead; //writing --last location written
+static volatile uint8_t SPI_TxTail; //read    --last location read   8 bit can represent maximu 256 byte
+static volatile uint16_t SPI_Length;
+
+
+//Sending Interrupt
+
+void Wireless_SPI_INT_handler(void)
+{
+	uint8_t tmpStatus;
+	uint8_t i;
+	uint8_t imax;
+	uint8_t pucTmp2[32];
+
+	CEDown(); // standby
+	tmpStatus=CMD(NOP);
+
+	if (tmpStatus & (1<<MAX_RT))
+	{
+		CMD(FLUSH_TX);
+		WriteReg(STATUS, 0x7E);
+	}
+
+	if ( SPI_TxHead != SPI_TxTail ) //sending soft buffer has stuff
+	{
+		/* calculate and store new buffer index */
+		SPI_TxTail = ((SPI_TxTail + 1) & (SPI_TX_BUFFER_SIZE-1));
+
+		if (SPI_Length<32)
+			imax=SPI_Length;
+		else
+			imax=32;
+
+		for (i=0;i<imax;i++)
+		{
+			pucTmp2[i]=SPI_TxBuf[(SPI_TxTail+i)&(SPI_TX_BUFFER_SIZE-1)];
+		}
+
+		CMD_2(W_TX_PAYLOAD, pucTmp2 , imax, NULL);
+
+		SPI_Length=SPI_Length-imax;
+		SPI_TxTail=((SPI_TxTail+imax-1)&(SPI_TX_BUFFER_SIZE-1));
+	}
+
+	else{
+		/* tx buffer empty, disable TDRE interrupt */
+		  AVR32_SPI.IDR.tdre=1;
+	}
+
+	WriteReg(STATUS, 0x7E);
+
+
+	CEUp(); //transmit
+
+}
+
+
+void NRF24L01P_Init(NRF24L01P_Property_t NRF24L01P_mProperty)
+{
+	SPI_TxHead=0;
+	SPI_TxTail=0;
+	SPI_Length=0;
+
+//	NRF24L01P_mProperty.ucCH=50; // default channel
+//	NRF24L01P_mProperty.pucAddr[0]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[1]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[2]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[3]=0xE7;
+//	NRF24L01P_mProperty.pucAddr[4]=0xC1;
+
+
+
+
+
+	gpio_enable_gpio_pin(NRF24L01P_CE_PIN);
+
+	CEDown(); // make sure the RF chip is in standby or power down mode
+//	portENTER_CRITICAL();
+	WriteReg(CONFIG, (1<<EN_CRC) | (1<<CRCO)); // power down
+	WriteReg(CONFIG, (1<<PWR_UP) | (1<<EN_CRC) | (1<<CRCO) | (1<<MASK_RX_DR) | (1<<MASK_TX_DS) | (1<<MASK_MAX_RT)); // power up in pTX mode, diable all interrupt except max_rt
+	//in standby-I
+	CMD(FLUSH_TX); // flush both RX and TX FIFOs
+	CMD(FLUSH_RX);
+	WriteReg(STATUS, 0x70); // clear the interrupt
+
+	//WriteReg(RF_SETUP, 0x26); // set the data rate to 250kbps with 0dBm output power
+	WriteReg(RF_SETUP, 0x0E); // set the data rate to 2Mbps with 0dBm output power
+	WriteReg(EN_AA, 0x01); // enable auto acknowledgment for pipe0
+	WriteReg(EN_RXADDR, 0x01); // enable pipe0
+	WriteReg(DYNPD, 0x01); // enable dynamic payload length in pipe0
+	WriteReg(FEATURE, (1<<EN_DPL) | (1<<EN_ACK_PAY)); // enable global dynamic payload length and payload with ACK
+	WriteReg(SETUP_AW, 0x03); // set address width to 5
+	WriteReg(SETUP_RETR, 0xFF); // wait 4ms for each retransmit, maximum 15 retransmits allowed
+	// enable 2 bytes CRC
+	delay_ms(5); // wait for power up //Page 24 Datasheet Timing Information
+	SetProperty(&NRF24L01P_mProperty);
+
+//	portEXIT_CRITICAL()	;
+	  //Configure Interrupt Handler
+	  Disable_global_interrupt();
+
+	  //Disable ALL SPI Interrupt
+	  AVR32_SPI.IDR.txempty=1;
+	  AVR32_SPI.IDR.nssr=1;
+	  AVR32_SPI.IDR.ovres=1;
+	  AVR32_SPI.IDR.modf=1;
+	  AVR32_SPI.IDR.rdrf=1;
+	  AVR32_SPI.IDR.tdre=1;
+
+	  /* register PB0 handler on level 1 */
+	  INTC_register_interrupt(&Wireless_SPI_INT_handler, AVR32_SPI_IRQ, AVR32_INTC_INT0);
+}
+
+uint8_t WriteReg(uint8_t ucAddr, uint8_t ucData) {
+	//portENTER_CRITICAL();
+	Start_SS();// pull down the CSN pin
+	uint8_t ucTmp = TransChar(W_REGISTER | (REGISTER_MASK & ucAddr));
+	// write the command to write a register and return the value in the status register
+	TransChar(ucData); // write the data to the register
+	Stop_SS(); // pull up the CSN pin
+	//portEXIT_CRITICAL();
+	return ucTmp;
+}
+
+uint8_t CMD_2(uint8_t ucCMD, uint8_t *pucSend, uint8_t ucLen,
+		uint8_t *pucReceive) {
+	uint8_t ucTmp;
+	Start_SS(); // pull down the CSN pin
+	ucTmp = TransChar(ucCMD); // write the command and receive the value in the status register
+	TransBlock(pucSend, ucLen, pucReceive); // write and receive a block of data with length equals to ucLen
+	Stop_SS(); // pull up the CSN pin
+	return ucTmp; // return the value in the status register
+}
+
+uint8_t CMD(uint8_t ucCMD) {
+	return CMD_2(ucCMD,NULL,0,NULL);
+}
+
+void SetProperty(NRF24L01P_Property_t *psProperty) {
+	//portENTER_CRITICAL();
+	CEDown(); // to ensure being at standby mode
+	WriteReg(RF_CH, (psProperty->ucCH) & 0x7F); // set the channel
+	ChangeAddr(psProperty->pucAddr);
+	CEUp(); // go to standby II mode
+}
+
+uint8_t ReadReg(uint8_t ucAddr, uint8_t *pucData) {
+//	portENTER_CRITICAL();
+	Start_SS(); // pull down the CSN pin
+	uint8_t ucTmp = TransChar(R_REGISTER | (REGISTER_MASK & ucAddr));
+	// write the command to read a register and return the value in the status register
+	*pucData = TransChar(NOP); // get the data from the register
+	Stop_SS(); // pull up the CSN pin
+//	portEXIT_CRITICAL();
+	return ucTmp; // return the value in the status register
+}
+
+void CEDown(void){
+	gpio_clr_gpio_pin(NRF24L01P_CE_PIN);	// Chip Disabled
+}
+
+void CEUp(void) {
+	   gpio_set_gpio_pin(NRF24L01P_CE_PIN);  //Chip Enabled
+}
+
+void Start_SS(void)
+{
+	spi_selectChip(&AVR32_SPI,0);
+	//delay_ms(1);
+}
+
+void Stop_SS(void)
+{
+	spi_unselectChip(&AVR32_SPI,0);
+}
+
+uint8_t WriteReg_2(uint8_t ucAddr, uint8_t *pucBuff, uint8_t ucLen) {
+		return CMD_2(W_REGISTER | (REGISTER_MASK & ucAddr), pucBuff, ucLen, NULL);
+	}
+
+void ChangeAddr(uint8_t *pucAddr) {
+		uint8_t *pucTmp;
+		uint8_t i;
+		pucTmp = (uint8_t*) alloca(sizeof(uint8_t[5])); // allocate enough space from the stack
+		for (i = 5; i; i--) {
+			*(pucTmp + i - 1) = pucAddr[5 - i]; // reverse the pipe0 address
+			WriteReg_2(RX_ADDR_P0, pucTmp, 5); // set the pipe0 address
+			WriteReg_2(TX_ADDR, pucTmp, 5); // set the TX address the same as the pipe0 address   --For PTX device only!
+		}
+	}
+
+uint8_t TransChar(uint8_t ucData) {
+	uint16_t tmpRead;
+
+	while (!spi_writeRegisterEmptyCheck(&AVR32_SPI));
+	spi_write(&AVR32_SPI,  ucData);
+
+	while(! (spi_writeEndCheck(&AVR32_SPI))); //wait until previous transfer compolete
+
+	while(! (spi_readRegisterFullCheck(&AVR32_SPI)));
+	spi_read(&AVR32_SPI, &tmpRead);
+	return (uint8_t)tmpRead;
+}
+
+void TransBlock(uint8_t *pucSend, uint8_t ucLen, uint8_t *pucReceive) {
+	uint8_t i;
+	uint8_t ucTmp;
+	for (i = 0; i < ucLen; i++) {
+		ucTmp = TransChar(*(pucSend + i));
+		if (pucReceive)
+			*(pucReceive + i) = ucTmp;
+	}
+}
+
+void SPI_PutChar(uint8_t data)
+{
+	SPI_PutChar2(data,0);
+}
+
+void SPI_PutChar2(uint8_t data, uint8_t string)
+{
+	volatile unsigned char tmpHEAD;
+
+	tmpHEAD=(SPI_TxHead+1) & (SPI_TX_BUFFER_SIZE-1); //buffer about to full, refuse to write
+	while (tmpHEAD==SPI_TxTail) ; //wait for freespace
+	if (!string)
+		{
+			//Disable_global_interrupt();
+			AVR32_SPI.IDR.tdre=1;
+		}
+
+	SPI_TxHead=tmpHEAD;
+	SPI_TxBuf[SPI_TxHead]=data;
+	SPI_Length++;
+
+	if (!string)
+		{
+			AVR32_SPI.IER.tdre=1;
+			//Enable_global_interrupt();
+		}
+
+}
+
+void SPI_Puts(const char *s )
+{
+	//Disable_global_interrupt();
+	AVR32_SPI.IDR.tdre=1;
+    while (*s!='\0')
+    {
+    	SPI_PutChar2(*s++, 1);
+    }
+    AVR32_SPI.IER.tdre=1;
+	//Enable_global_interrupt();
+
+
+}/* uart_puts */

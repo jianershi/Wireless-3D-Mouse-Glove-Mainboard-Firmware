@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 1.0.0?>
+<framework-data>
+  <options>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.wdt" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.ssc" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.flashc" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.pdca" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.touch.at42qt1060" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.newlibaddon" value="speed"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.joystick" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.accelerometer" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.sdmmc" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.nand_gpio" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.adc" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.usart" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.delay" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.eic" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.audio.tlv320aic23b" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.cpu.cc" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.dsplib" value="none"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.debug.dsplib" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.usbb" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.audiomixer" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.audio.dac.pwmdac" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.gpio" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.rtc" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.freertos" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.touch.qt1081" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.usbb" value="None"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.twi" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.spi" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.memory" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.pictures.jpg" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.tc" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.dataflash.at25dfx" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.pm" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.memory.ecchamming" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.intc" value="true"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.fat" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.pwm" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.touch.qt60168" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.autobaud" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.driver.option.cpu.mpu" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.dataflash" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.component.option.display" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.debug" value="false"/>
+    <option id="com.atmel.avr32.sf.uc3b.service.option.polarssl" value="false"/>
+  </options>
+  <files>
+    <file path="src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="SERVICES/DELAY/delay.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/FLASHC/flashc.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_interrupts.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_interrupts.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/libnewlib_addons-at32ucr1-speed_opt.a" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/AT32UCR1/libnewlib_addons-at32ucr1-speed_opt.a" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/PM/pm.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/exception.x" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/INTC/exception.S" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/parts.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/parts.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/ASM/trampoline.x" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="UTILS/STARTUP_FILES/GCC/trampoline.S" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/INTC/intc.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/INTC/intc.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/STARTUP_FILES/GCC/crt0.x" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="UTILS/STARTUP_FILES/GCC/crt0.S" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/PM/power_clocks_lib.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/PREPROCESSOR/stringz.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/PREPROCESSOR/stringz.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/evk1101.h" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="BOARDS/EVK1101/evk1101.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/BOARDS/board.h" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="BOARDS/board.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/PREPROCESSOR/mrepeat.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/PREPROCESSOR/mrepeat.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/PREPROCESSOR/preprocessor.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/PREPROCESSOR/preprocessor.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/GPIO/gpio.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_io.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_io.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/compiler.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/compiler.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/SPI/spi.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/GPIO/gpio.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_usart.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_usart.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LINKER_SCRIPTS/AT32UC3B/0256/GCC/link_uc3b0256.lds" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="UTILS/LINKER_SCRIPTS/AT32UC3B/0256/GCC/link_uc3b0256.lds" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="SERVICES/DELAY/delay.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/PM/power_clocks_lib.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/conf_isp.h" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="SERVICES/USB/CLASS/DFU/EXAMPLES/ISP/CONF/conf_isp.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/PREPROCESSOR/tpaste.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/PREPROCESSOR/tpaste.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/led.h" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="BOARDS/EVK1101/led.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/PM/pm.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/BOARDS/EVK1101/led.c" framework="com.atmel.avr32.sf.uc3" version="1.7.0" source="BOARDS/EVK1101/led.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_cpu.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_cpu.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/FLASHC/flashc.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm_conf_clocks.c" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/PM/pm_conf_clocks.c" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/CPU/CYCLE_COUNTER/cycle_counter.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/CPU/CYCLE_COUNTER/cycle_counter.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_exceptions.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="UTILS/LIBS/NEWLIB_ADDONS/INCLUDE/nlao_exceptions.h" changed="false"/>
+    <file path="src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.h" framework="com.atmel.avr32.sf.uc3b" version="1.7.0" source="DRIVERS/SPI/spi.h" changed="false"/>
+  </files>
+</framework-data>
